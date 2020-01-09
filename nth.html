@@ -1,0 +1,30 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<link href="nth.css" type="text" rel="stylesheet/css">
+<script>
+function go(){
+	var a = document.getElementById("a").value;
+	var b = document.getElementById("b").value;
+	var nf = b - a;
+	var lf = a - nf;
+	if (lf > 0){
+		var fo = nf+"n + "+lf;
+	}
+	else {
+		var fo = nf+"n "+lf;}
+	document.getElementById("r").innerHTML = fo;
+}
+</script>
+</head>
+<body>
+<h1>
+Calculates nth term for linear sequences
+</h1>
+<input id="a"></input>
+<input id="b"></input>
+<button onclick="go()">go</button>
+<p id="r"></p>
+</h1>
+</body>
+</html>
